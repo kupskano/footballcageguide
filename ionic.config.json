@@ -1,0 +1,7 @@
+{
+  "name": "footballcageguide",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
