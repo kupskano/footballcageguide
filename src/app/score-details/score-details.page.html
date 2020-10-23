@@ -1,0 +1,47 @@
+
+<ion-content padding class="background">
+  <div>
+    <ion-card class="second-card">
+      <ion-buttons>
+        <ion-back-button text="" icon="chevron-back" defaultHref="/scores"></ion-back-button>
+      </ion-buttons>
+    </ion-card>
+  </div>
+   
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="card-main">
+          <ion-card-header>
+          <b>{{title}}</b>  
+          </ion-card-header>
+          <ion-card-content>
+            {{description}}
+          </ion-card-content>
+          <ion-row class="card-footer">
+            <ion-col>
+          <ion-datetime displayFormat="MMMM DD YYYY" [(ngModel)]="dateMessage" style="float: left; color: blue; bottom: 0;" disabled></ion-datetime>
+            </ion-col>
+        </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+ 
+  <!-- <div  class="ion-text-center">
+    <ion-card >
+      <ion-card-content>
+        carlo santos
+      </ion-card-content>
+    </ion-card>
+  </div> -->
+</ion-content>

@@ -1,0 +1,81 @@
+
+<ion-content padding class="background">
+  <div>
+    <ion-card class="second-card">
+      <ion-buttons>
+        <ion-back-button text="" icon="chevron-back" defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+    </ion-card>
+  </div>
+   
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="card-main">
+          <ion-card-header>
+          <b>THE TWO SIDES OF THE BALL</b>  
+          </ion-card-header>
+          <ion-card-content>
+            Whichever team has possession of the ball is the offense. While only the quarterback, the wide receivers and tight ends,
+            and the running backs can legally handle the ball, it is the quarterback who is the leader of the team and the playmaker. In
+            fact, he's a man of many talents - he not only throws the ball, he outlines each play to his team.
+          </ion-card-content>
+          <ion-row class="card-footer">
+            <ion-col>
+          <ion-datetime displayFormat="MMMM DD YYYY" [(ngModel)]="dateMessage" style="float: left; color: blue; bottom: 0;" disabled></ion-datetime>
+            </ion-col>
+        </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+ 
+  <!-- <div  class="ion-text-center">
+    <ion-card >
+      <ion-card-content>
+        carlo santos
+      </ion-card-content>
+    </ion-card>
+  </div> -->
+</ion-content>
+<ion-footer>
+  <ion-toolbar  >
+    <ion-tabs>
+      <ion-tab-bar slot="bottom" fixed >
+        <ion-tab-button  routerLink="/home">
+          <ion-icon name="home-outline"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button  routerLink="/scores">
+          <ion-icon name="football-outline"></ion-icon>
+          <ion-label>Scores</ion-label>
+        </ion-tab-button>
+    
+        <!-- <ion-tab-button tab="costs">
+          <ion-icon name="list-outline"></ion-icon>
+          <ion-label>Example</ion-label>
+        </ion-tab-button> -->
+    
+        <ion-tab-button routerLink="/intercept">
+          <ion-icon name="globe-outline"></ion-icon>
+          <ion-label>Intercept</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button routerLink="/others">
+          <ion-icon name="shuffle-outline"></ion-icon>
+          <ion-label>Others</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

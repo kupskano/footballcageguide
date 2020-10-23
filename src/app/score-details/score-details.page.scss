@@ -1,0 +1,30 @@
+ion-content.background{
+    --background: url(../../assets/icon/bball.png) 0px 22px  /100% 50% no-repeat;
+    display: flex; // make us of Flexbox
+  justify-content: center; // horizontally centers single line items
+  text-align: center;
+}
+
+
+.card-main { 
+
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+   
+    // position: absolute;  
+    // bottom: 200px;
+    // position: absolute;
+    // bottom: 0px; 
+    // align-items: center;
+    // position: absolute;
+    // bottom: 0px;
+    height: 400px;
+    
+}
+
+
+.second-card {
+    width: 50px;
+}
+
+

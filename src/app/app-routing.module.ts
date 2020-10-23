@@ -11,6 +11,34 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'basic-details',
+    loadChildren: () => import('./basic-details/basic-details.module').then( m => m.BasicDetailsPageModule)
+  },
+  {
+    path: 'advance-details',
+    loadChildren: () => import('./advance-details/advance-details.module').then( m => m.AdvanceDetailsPageModule)
+  },
+  {
+    path: 'scores',
+    loadChildren: () => import('./scores/scores.module').then( m => m.ScoresPageModule)
+  },
+  {
+    path: 'score-details',
+    loadChildren: () => import('./score-details/score-details.module').then( m => m.ScoreDetailsPageModule)
+  },
+  {
+    path: 'intercept',
+    loadChildren: () => import('./intercept/intercept.module').then( m => m.InterceptPageModule)
+  },
+  {
+    path: 'others',
+    loadChildren: () => import('./others/others.module').then( m => m.OthersPageModule)
+  },
+  {
+    path: 'tae',
+    loadChildren: () => import('./tae/tae.module').then( m => m.TaePageModule)
+  },
 ];
 
 @NgModule({
